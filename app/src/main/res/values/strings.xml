@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Animal Kingdom</string>
+    <string name="homeJudul">Siap menjelajahi Animal Kingdom?</string>
+    <string name="homeJudul2">Ada berbagai jenis hewan Vertebrata dan Invertebrata yang bisa kamu pelajari di dalamnya, saatnya cari tahu!</string>
+    <string name="mainJudul">Ada banyak sekali hewan Vertebrata disini yang dapat kamu baca dan jelajahi!</string>
+    <string name="mamalia">Mamalia</string>
+    <string name="aves">Aves</string>
+    <string name="pisces">Pisces</string>
+    <string name="amfibi">Amfibi</string>
+    <string name="reptil">Reptil</string>
+    <string name="contohmamalia">Menyusui</string>
+    <string name="contohaves">Bersayap, berbulu </string>
+    <string name="contohpisces">Hidup di air  </string>
+    <string name="contohamfibi">Hidup di dua alam </string>
+    <string name="contohreptil">Melata, bersisik  </string>
+
+</resources>

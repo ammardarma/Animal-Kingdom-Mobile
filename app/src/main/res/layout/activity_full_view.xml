@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+<!-- LAYOUT GAMBAR! -->
+        <LinearLayout
+            android:id="@+id/viewLLbg"
+            android:layout_width="match_parent"
+            android:layout_height="430dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/fullview_bg"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/gambar"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:scaleType="fitXY"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/namaHewan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="14dp"
+                android:text="Nama Hewan"
+                android:textColor="@color/nero"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/namaLatin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"
+                android:text="Nama Latin"
+                android:textSize="20dp"
+                android:textStyle="italic" />
+
+
+
+        </LinearLayout>
+
+
+
+<!-- LAYOUT STATUS! -->
+        <LinearLayout
+            android:id="@+id/layoutstatus"
+            android:layout_margin="5dp"
+            android:padding="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/layout_bg"
+            android:backgroundTint="@color/identity"
+            android:gravity="center"
+            android:layout_below="@id/viewLLbg">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Status"
+                android:textColor="@color/nero"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/imagestatus"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/statusok"/>
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:layout_marginTop="5dp"
+                android:layout_marginHorizontal="6dp"
+                android:paddingBottom="5dp"
+                android:textSize="14dp"
+                app:layout_constraintStart_toEndOf="@+id/textView13"
+                app:layout_constraintTop_toTopOf="@+id/textView13" />
+        </LinearLayout>
+
+
+
+
+        <!-- GRUP 1 -->
+<LinearLayout
+    android:id="@+id/grup1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    android:layout_below="@id/layoutstatus">
+
+<!-- LAYOUT JENIS MAKANAN! -->
+<LinearLayout
+    android:id="@+id/layoutjenismakanan"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:background="@drawable/layout_bg_left"
+            android:backgroundTint="@color/softblue"
+            android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jenis Makanan"
+        android:textColor="@color/nero"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/imageMakanan"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/karnivora" />
+
+        <TextView
+            android:id="@+id/jenisMakanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="6dp"
+            android:paddingBottom="5dp"
+            android:justificationMode="inter_word"
+            android:text="Jenis Makanan"
+            android:textSize="14dp" />
+</LinearLayout>
+
+ <!-- LAYOUT MAKANAN KESUKAAN! -->
+<LinearLayout
+        android:id="@+id/layoutmakanankesukaan"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:orientation="vertical"
+        android:background="@drawable/layout_bg_right"
+        android:backgroundTint="@color/toska"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/layoutperserbaran"
+        android:layout_toRightOf="@id/layoutjenisspesies">
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Makanan Kesukaan"
+            android:textColor="@color/nero"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/imagemakanankesukaan"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/makanankesukaan" />
+
+        <TextView
+            android:id="@+id/makananKesukaan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Makanan Kesukaan"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="6dp"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+        <!-- GRUP 2 -->
+<LinearLayout
+            android:id="@+id/grup2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_below="@id/grup1">
+
+
+        <!-- LAYOUT JENIS SPESIES! -->
+    <LinearLayout
+        android:id="@+id/layoutjenisspesies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:layout_weight="0.5"
+        android:backgroundTint="@color/softcoklat"
+        android:background="@drawable/layout_bg_left"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis Spesies"
+            android:textColor="@color/nero"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/imageSpesies"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/species" />
+
+        <TextView
+            android:id="@+id/jenisSpesies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="6dp"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="5dp"
+            android:gravity="center"
+            android:text="Jenis Spesies"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+    <!-- LAYOUT JENIS PERSEBARAN! -->
+    <LinearLayout
+            android:id="@+id/layoutperserbaran"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:backgroundTint="@color/pinksoft"
+            android:background="@drawable/layout_bg_right"
+            android:layout_toRightOf="@id/layoutjenisspesies"
+            android:gravity="center_horizontal"
+            android:layout_weight="0.5">
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Persebaran"
+            android:textColor="@color/nero"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/imagepesebaran"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/persebaran" />
+
+        <TextView
+            android:id="@+id/pesebaran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Persebaran"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="6dp"
+            android:paddingBottom="5dp"
+            android:gravity="center"
+            android:textSize="14sp" />
+        </LinearLayout>
+        </LinearLayout>
+
+
+
+        <!-- LAYOUT DESKRIPSI! -->
+<LinearLayout
+            android:id="@+id/layoutdeskripsi"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:backgroundTint="@color/cream"
+            android:background="@drawable/layout_bg"
+            android:gravity="center"
+            android:layout_below="@id/grup2">
+
+
+            <TextView
+             android:id="@+id/textView18"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Deskripsi"
+             android:textColor="@color/nero"
+             android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/imagedeskripsi"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/deskripsi" />
+
+
+        <TextView
+            android:id="@+id/deskripsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="6dp"
+            android:paddingBottom="10dp"
+            android:text="Deskripsi"
+            android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
